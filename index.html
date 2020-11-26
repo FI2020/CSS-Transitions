@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <style>
+        #first {
+            width: 150px;
+            height: 150px;
+            background-color: fuchsia;
+            box-shadow: black 5px 5px 10px;
+            border-radius: 0;
+            transition: width  12s;/*8s welcher Wert verändert sich in welcher Zeit */
+            transition-delay: 40ms ;/* Zeit, bis Veränderung eintritt*/
+            transition-timing-function: linear;
+
+        }
+
+        #first:hover {
+            width: 400px;
+
+        }
+
+        #second {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(255, 0, 0);
+            box-shadow: black 5px 5px 10px;
+            transition: transform 900ms;
+
+        }
+
+        #second:hover {
+            transform: translatex(400px);
+
+        }
+
+        #btn {
+            height: 50px;
+            width: 120px;
+            color: white;
+            background-color: darkblue;
+            box-shadow: 3px 3px 10px;
+            border-radius: 10px;
+            transition: font-size 3s, height 3s, width 3s, box-shadow 5s;
+        }
+        #btn:hover {
+            font-size: 26px;
+            height: 90px;
+            width: 160px;
+            box-shadow: 15px 15px 10px;
+        }
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+<div id="first"></div>
+
+<div id="second"></div>
+<br><br>
+<button id="btn">Das ist mein Button!</button>
+
+
+</body>
+</html>
